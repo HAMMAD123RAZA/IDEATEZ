@@ -1,0 +1,177 @@
+{
+  "webAppDev": {
+    "title": "Web & App Development",
+    "subtitle": "Website That Drives Results — Let's Build!",
+    "description": [
+      "Transform your online presence with Marketist’s Web Design & Development! We craft stunning, SEO-friendly websites that captivate visitors and drive sales.",
+      "From dynamic e-commerce platforms to sleek informational sites, our tailored solutions ensure your brand stands out and converts leads into loyal customers.",
+      "Let’s build your digital success story now!"
+    ],
+    "features": [
+      {
+        "icon": "⚙️",
+        "title": "Business Website Design",
+        "description": "Perfect for small and medium businesses to showcase services, online presence & portfolio"
+      },
+      {
+        "icon": "🛒",
+        "title": "Ecommerce Store",
+        "description": "Sell your products online with our Ecommerce Web Solutions. Full Featured WordPress, Shopify or Custom Developed Store"
+      },
+      {
+        "icon": "📦",
+        "title": "Landing Page | 1 Page Web",
+        "description": "Perfect for Sales Funnel for Google Ads & Other Paid Ad Campaign"
+      },
+      {
+        "icon": "⚡",
+        "title": "Custom Solutions",
+        "description": "Backend can be in php, laravel, React Native. Front end will be in html, css & javascript"
+      }
+    ],
+    "sliderData": "serviceSliders.webAppDev.items"
+  },
+  "digitalMarketing": {
+    "title": "Digital Marketing",
+    "subtitle": "Boost Your Brand — Let’s Grow!",
+    "description": [
+      "Elevate your online presence with Marketist’s Digital Marketing solutions! We create data-driven strategies to increase your visibility and engagement.",
+      "From SEO to social media campaigns, our tailored approaches ensure your brand reaches the right audience and converts clicks into customers.",
+      "Let’s amplify your digital growth today!"
+    ],
+    "features": [
+      {
+        "icon": "🔍",
+        "title": "SEO Services",
+        "description": "Rank higher on search engines with our expert SEO strategies, driving organic traffic to your site"
+      },
+      {
+        "icon": "🤳",
+        "title": "Social Media Marketing",
+        "description": "Engage your audience on platforms like Instagram, Facebook, and LinkedIn with targeted campaigns"
+      },
+      {
+        "icon": "🛍️",
+        "title": "eCommerce Marketing",
+        "description": "Using promotional strategies to drive traffic to an online store, convert visitors into customers, and retain them after their purchase."
+      },
+      {
+        "icon": "✍️",
+        "title": "Content Marketing",
+        "description": "Build trust and authority with high-quality blogs, videos, and infographics tailored to your audience"
+      }
+    ],
+    "sliderData": "serviceSliders.digitalMarketing.items"
+  },
+  "designDevelopment": {
+    "title": "Design & Development",
+    "subtitle": "Bring Your Brand to Life with Visual Storytelling",
+    "description": [
+      "From logos that define your identity to animations that captivate your audience, we create visual experiences that elevate your brand. Our team blends artistic flair with technical expertise to deliver designs and motion graphics that resonate, engage, and inspire action.",
+      {
+        "type": "heading",
+        "text": "What We Create:"
+      },
+      {
+        "type": "items",
+        "list": [
+          {
+            "text": "Logo & Branding",
+            "bgColor": "bg-blue-500",
+            "textColor": "text-white",
+            "rounded": "rounded-full",
+            "border": "border-2 border-white",
+            "padding": "px-6 py-2"
+          },
+          {
+            "text": "Digital Banners & Ads",
+            "bgColor": "bg-green-500",
+            "textColor": "text-white",
+            "rounded": "rounded-full",
+            "border": "border-2 border-white",
+            "padding": "px-6 py-2"
+          },
+          {
+            "text": "Animation & Motion Graphics",
+            "bgColor": "bg-yellow-500",
+            "textColor": "text-black",
+            "rounded": "rounded-full",
+            "border": "border-2 border-black",
+            "padding": "px-6 py-2"
+          },
+          {
+            "text": "Video Production",
+            "bgColor": "bg-red-500",
+            "textColor": "text-white",
+            "rounded": "rounded-full",
+            "border": "border-2 border-white",
+            "padding": "px-6 py-2"
+          }
+        ]
+      },
+      "Let’s craft your Content!"
+    ],
+
+    "features": [
+      
+      {
+        "icon": "🖋️",
+        "title": "Logo & Brand Identity",
+        "description": "Custom logos and brand kits that define your voice and captivate your audience."
+      },
+      {
+        "icon": "🏷️",
+        "title": "Digital Advertising Assets",
+        "description": "High-impact banners, social media ads, and graphics optimized for conversions."
+      },
+      {
+        "icon": "🎬",
+        "title": "Animation & Motion Design",
+        "description": "Engaging explainer videos, micro-animations, and scroll-stopping social media reels."
+      },
+      {
+        "icon": "📽️",
+        "title": "Video Content Creation",
+        "description": "Professional video production for ads, tutorials, brand stories, and platform-specific content."
+      },
+      {
+        "icon": "🖇️",
+        "title": "UI/UX Design",
+        "description": "Create intuitive and visually appealing interfaces that enhance user experience"
+      }
+    ],
+    "sliderData": "serviceSliders.designDevelopment.items"
+  },
+  "outsourcing": {
+    "title": "Digital Marketing Outsourcing",
+    "subtitle": "Scale Your Growth — Let’s Partner!",
+    "description": [
+      "Outsource your digital marketing with Marketist and focus on what you do best! We provide expert solutions to boost your online presence while saving you time and resources.",
+      "From strategy to execution, our team handles everything, ensuring your brand thrives in the digital landscape with measurable results.",
+      "Let’s take your marketing to the next level—partner with us today!"
+    ],
+    "features": [
+      {
+        "icon": "📊",
+        "title": "Full Campaign Management",
+        "description": "Comprehensive management of your digital campaigns, from planning to optimization"
+      },
+      {
+        "icon": "📉",
+        "title": "Analytics & Reporting",
+        "description": "Detailed insights and reports to track performance and ROI of your marketing efforts"
+      },
+      {
+        "icon": "💻",
+        "title": "Ad Management",
+        "description": "Expert handling of Google Ads, social media ads, and other paid campaigns for maximum impact"
+      },
+      {
+        "icon": "🤝",
+        "title": "Dedicated Support",
+        "description": "A dedicated team to support your marketing needs, ensuring seamless collaboration"
+      }
+    ],
+    "sliderData": "serviceSliders.outsourcing.items"
+  }
+}

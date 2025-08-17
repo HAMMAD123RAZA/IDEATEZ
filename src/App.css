@@ -1,0 +1,8 @@
+/* client/src/App.css */
+
+@import "tailwindcss";
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #03060b;
+}

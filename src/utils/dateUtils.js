@@ -1,0 +1,29 @@
+// FILE: client/src/utils/dateUtils.js
+export const formatDateToLocal = (date) => {
+  if (!(date instanceof Date)) return '';
+  return new Intl.DateTimeFormat('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit'
+  }).format(date);
+};
+
+export const getTimeAgo = (date) => {
+  if (!(date instanceof Date)) return '';
+
+  const now = new Date();
+  const seconds = Math.round((now - date) / 1000);
+  const minutes = Math.round(seconds / 60);
+  const hours = Math.round(minutes / 60);
+  const days = Math.round(hours / 24);
+
+  if (seconds < 60) return `${seconds} sec ago`;
+  if (minutes < 60) return `${minutes} min ago`;
+  if (hours < 24) return `${hours} hr${hours !== 1 ? 's' : ''} ago`;
+  if (days < 30) return `${days} day${days !== 1 ? 's' : ''} ago`;
+
+  return '';
+};
