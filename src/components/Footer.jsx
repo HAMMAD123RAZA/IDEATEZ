@@ -2,6 +2,7 @@
 import React from 'react';
 import { FaDiscord, FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -36,9 +37,9 @@ const Footer = () => {
 
           {/* Third Column */}
           <div className="flex flex-col items-center md:items-end text-center md:text-right">
-            <a href="/AboutUs" className="text-lg font-medium mb-4 hover:underline">About Us</a>
-            <a href="/Get_A_Quote" className="text-lg font-medium mb-4 hover:underline">Join Us</a>
-            <a href="/portfolio" className="text-lg font-medium mb-4 hover:underline">Portfolio</a>
+            <Link to="/AboutUs" className="text-lg font-medium mb-4 hover:underline">About Us</Link>
+            <Link to="/Get_A_Quote" className="text-lg font-medium mb-4 hover:underline">Join Us</Link>
+            <Link to="/portfolio" className="text-lg font-medium mb-4 hover:underline">Portfolio</Link>
           </div>
         </div>
 
