@@ -275,7 +275,7 @@ const PortfolioHero = () => {
     }
     return (
       <>
-        <span className="text-white">SERVICES</span>
+        <span className="text-gray-700">SERVICES</span>
         <span className="text-yellow-500"> PORTFOLIO</span>
       </>
     );
@@ -304,7 +304,7 @@ const PortfolioHero = () => {
 
       <div
         className="text-center mb-12 z-10 px-4 max-w-3xl mx-auto 
-           mt-24 md:mt-28 lg:mt-32 bg-gray-800 py-4 rounded-lg"
+           mt-24 md:mt-28 lg:mt-32 bg-[#e8e4d8] py-4 rounded-lg"
         style={{ marginTop: '10rem' }}
       >
         <motion.h2

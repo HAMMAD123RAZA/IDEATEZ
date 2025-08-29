@@ -5,14 +5,14 @@ import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#0c0c0c] text-white py-10 mt-20">
+    <footer className="w-full bg-transparent text-white py-10 mt-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
           {/* First Column */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <h2 className="text-3xl font-bold mb-4">Digital Agency</h2>
-            <img src="/da-log.png" alt="Logo" className="w-40 h-auto mb-4" />
+            <h2 className="text-3xl font-bold mb-4">IDEATEZ</h2>
+            <img src="/IdLogo1.jpg" alt="Logo" className="w-40 h-auto mb-4 rounded-full" />
           </div>
 
           {/* Second Column */}
@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-end text-center md:text-right">
             <a href="/AboutUs" className="text-lg font-medium mb-4 hover:underline">About Us</a>
             <a href="/Get_A_Quote" className="text-lg font-medium mb-4 hover:underline">Join Us</a>
-            <a href="/careers" className="text-lg font-medium mb-4 hover:underline">Careers</a>
+            <a href="/portfolio" className="text-lg font-medium mb-4 hover:underline">Portfolio</a>
           </div>
         </div>
 

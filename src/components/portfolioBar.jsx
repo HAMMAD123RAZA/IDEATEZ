@@ -243,10 +243,10 @@ const PortfolioBar = () => {
           <motion.button
             key={category}
             onClick={() => handleCategorySelect(category)}
-            className={`px-3 sm:px-4 py-1 rounded-full transition-all ${activeCategory === category
-                ? 'bg-yellow-600 text-gray-700'
-                : 'bg-yellow-500 text-gray-500'
-              } hover:text-blue-900 text-sm sm:text-lg font-medium`}
+            className={`px-3 cursor-pointer sm:px-4 py-1 rounded-full transition-all ${activeCategory === category
+                ? 'bg-yellow-600 text-gray-100'
+                : 'bg-[#e8e4d8] text-gray-500'
+              }  text-sm sm:text-lg font-medium`}
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -256,7 +256,7 @@ const PortfolioBar = () => {
       </div>
 
       {/* Main 3D Viewer Container */}
-      <div className="w-full max-w-5xl mx-auto aspect-video relative rounded-lg overflow-hidden bg-pink-900 border border-gray-200 shadow-sm">
+      <div className="w-full max-w-5xl mx-auto aspect-video relative rounded-lg overflow-hidden bg-transparent border border-gray-200 shadow-sm">
         {filteredProjects.length > 0 && is3DProject() && (
           <motion.div
             key={filteredProjects[currentProjectIndex].id}

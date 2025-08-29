@@ -114,9 +114,9 @@ const QuoteForm = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="w-full max-w-md bg-gray-900 rounded-lg shadow-xl p-6"
+        className="w-full max-w-md bg-[#d4d4d4] rounded-lg shadow-xl p-6"
       >
-        <h2 className="text-2xl font-bold text-white mb-6 text-center">{formTitle}</h2>
+        <h2 className="text-2xl font-bold text-[#a3852b] mb-6 text-center">{formTitle}</h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -128,7 +128,7 @@ const QuoteForm = () => {
               value={formData.name}
               onChange={handleChange}
               placeholder="Your Name"
-              className="w-full px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 bg-[#a3852b] text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-100"
               required
             />
           </div>
@@ -142,7 +142,7 @@ const QuoteForm = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Your Email"
-              className="w-full px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 bg-[#a3852b] text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-100"
               required
             />
           </div>
@@ -157,7 +157,7 @@ const QuoteForm = () => {
             onChange={handleChange}
             onWheel={(e) => e.target.blur()}
             placeholder="Your number"
-            className="w-full px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 bg-[#a3852b] text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-100"
             required
           />
           </div>
@@ -169,7 +169,7 @@ const QuoteForm = () => {
               name="service"
               value={formData.service}
               onChange={handleChange}
-              className="w-full px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 bg-[#a3852b] text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-100"
               required
             >
               <option disabled hidden value="">
@@ -192,7 +192,7 @@ const QuoteForm = () => {
               value={formData.company}
               onChange={handleChange}
               placeholder="Company Name (Optional)"
-              className="w-full px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 bg-[#a3852b] text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-100"
             />
           </div>
 
@@ -205,7 +205,7 @@ const QuoteForm = () => {
               onChange={handleChange}
               placeholder={formTitle}
               rows="4"
-              className="w-full px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+              className="w-full px-4 py-2 bg-[#a3852b] text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-100 resize-none"
               required
             />
           </div>
@@ -221,7 +221,7 @@ const QuoteForm = () => {
           </motion.button>
         </form>
 
-        <p className="text-gray-400 text-sm text-center mt-4">We'll get back to you within 24 hours</p>
+        <p className="text-[#a3852b] text-sm text-center mt-4">We'll get back to you within 24 hours</p>
       </motion.div>
     </div>
   );

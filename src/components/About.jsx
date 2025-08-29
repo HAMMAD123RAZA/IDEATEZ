@@ -7,7 +7,7 @@ const WhoWeAreSection = () => {
   const agencyInfo = {
     description: "We're a forward-thinking digital agency passionate about crafting innovative solutions that drive real results. Our team of experts combines creativity and technical expertise to deliver exceptional digital experiences.",
     founder: {
-      name: "Sohail Khatri",
+      name: "HAMMAD RAZA",
       role: "Founder & CEO",
       message: "Our mission is to empower businesses through technology and design. We believe in creating digital experiences that not only look beautiful but also deliver measurable value.",
       image: "https://www.cio.com/wp-content/uploads/2024/01/shutterstock_1095953582.jpg?quality=50&strip=all&w=1024"

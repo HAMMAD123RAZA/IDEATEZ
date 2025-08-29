@@ -4,16 +4,73 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 const ServicesSection = () => {
-  const services = [
-    { id: 1, icon: '📣', title: 'Digital Marketing', description: 'SEO, Social Media Marketing Strategies to grow your business.', cta: 'Learn More', path: 'Digital_Marketing' },
-    { id: 2, icon: '💻', title: 'Web Development', description: 'Custom Websites, CMS Solutions and E-commerce platforms.', cta: 'Learn More', path: 'Web_&_App_Development' },
-    { id: 3, icon: '🛒', title: 'App Development', description: 'iOS, Android, and Cross-Platform Apps for your business.', cta: 'Learn More', path: 'Web_&_App_Development' },
-    { id: 4, icon: '🎨', title: 'UI/UX Design', description: 'Creative and user-friendly designs for seamless experiences.', cta: 'Learn More', path: 'Design_&_Development' },
-    { id: 5, icon: '🔒', title: 'Cybersecurity', description: 'Protect your business with advanced security solutions.', cta: 'Learn More', path: 'Digital_Marketing_Outsourcing' },
-    { id: 6, icon: '⚜️', title: 'Graphic Content Creation', description: 'Custom logos and brand kits that define your voice and captivate your audience.', cta: 'Learn More', path: 'Design_&_Development' },
-    { id: 7, icon: '☁', title: 'Cloud Solutions', description: 'Scalable and secure cloud infrastructure for your business.', cta: 'Learn More', path: 'Digital_Marketing_Outsourcing' },
-    { id: 8, icon: '֎🇦🇮', title: 'AI & Machine Learning', description: 'Intelligent solutions to automate and optimize processes.', cta: 'Learn More', path: 'Digital_Marketing_Outsourcing' },
-  ];
+
+const services = [
+  { 
+    id: 1, 
+    title: 'Digital Marketing', 
+    description: 'SEO, Social Media Marketing Strategies to grow your business.', 
+    cta: 'Learn More', 
+    path: 'Digital_Marketing',
+    image: 'https://images.unsplash.com/photo-1508830524289-0adcbe822b40?w=800&q=80' 
+  },
+  { 
+    id: 2, 
+    title: 'Web Development', 
+    description: 'Custom Websites, CMS Solutions and E-commerce platforms.', 
+    cta: 'Learn More', 
+    path: 'Web_&_App_Development',
+    image: 'https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+  },
+  { 
+    id: 3, 
+    title: 'App Development', 
+    description: 'iOS, Android, and Cross-Platform Apps for your business.', 
+    cta: 'Learn More', 
+    path: 'Web_&_App_Development',
+    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+  },
+  { 
+    id: 4, 
+    title: 'UI/UX Design', 
+    description: 'Creative and user-friendly designs for seamless experiences.', 
+    cta: 'Learn More', 
+    path: 'Design_&_Development',
+    image: 'https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+  },
+  { 
+    id: 5, 
+    title: 'Cybersecurity', 
+    description: 'Protect your business with advanced security solutions.', 
+    cta: 'Learn More', 
+    path: 'Digital_Marketing_Outsourcing',
+    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+  },
+  { 
+    id: 6, 
+    title: 'Graphic Content Creation', 
+    description: 'Custom logos and brand kits that define your voice and captivate your audience.', 
+    cta: 'Learn More', 
+    path: 'Design_&_Development',
+    image: 'https://images.unsplash.com/photo-1503602642458-232111445657?w=800&q=80' 
+  },
+  { 
+    id: 7, 
+    title: 'Cloud Solutions', 
+    description: 'Scalable and secure cloud infrastructure for your business.', 
+    cta: 'Learn More', 
+    path: 'Digital_Marketing_Outsourcing',
+    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+  },
+  { 
+    id: 8, 
+    title: 'AI & Machine Learning', 
+    description: 'Intelligent solutions to automate and optimize processes.', 
+    cta: 'Learn More', 
+    path: 'Digital_Marketing_Outsourcing',
+    image: 'https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+  },
+];
 
   const REPEAT_COUNT = 100;
   const loopedServices = Array.from({ length: REPEAT_COUNT }, () => services).flat();
@@ -110,21 +167,23 @@ const ServicesSection = () => {
                   onMouseLeave={handleMouseLeave}
                   style={{ transform: `scale(${scale})`, transition: 'transform 0.5s ease' }}
                 >
-                  <div className="group bg-gray-900 bg-opacity-50 border-1 border-gray-700 p-1 rounded-lg shadow-lg hover:shadow-xl hover:border-amber-400 transition-all duration-900 flex flex-col">
+                  <div className="group bg-[#e8e4d7] bg-opacity-50 border-1 border-gray-700 p-1 rounded-lg shadow-lg hover:shadow-xl hover:border-amber-400 transition-all duration-900 flex flex-col">
 
-                    <div className='h-40 bg-gray-700 flex items-center justify-center rounded-lg shadow-lg'>
-
-                      <div className="text-6xl hover:text-8xl text-center mb-2 transition-all duration-400">
-                        {service.icon}
-                      </div>
+<div className='h-40 w-full flex items-center justify-center rounded-lg shadow-lg overflow-hidden'>
+  <img 
+    src={service.image} 
+    alt={service.title}
+    className="w-full h-full object-cover"
+  />
+                 
                     </div>
 
                     <div className="p-1 flex-grow flex flex-col">
-                      <h3 className="text-lg font-bold text-yellow-500 mb-2">
+                      <h3 className="text-lg font-bold text-gray-500 mb-2">
                         {service.title}
                       </h3>
 
-                      <p className="text-sm text-gray-300 mb-3">
+                      <p className="text-sm text-gray-600 mb-3">
                         {service.description}
                       </p>
 
@@ -132,7 +191,7 @@ const ServicesSection = () => {
 
                         <Link
                           to={service.path}
-                          className="inline-block bg-transparent border-1 border-yellow-500 px-8 text-yellow-500 rounded-md hover:bg-yellow-500 hover:bg-opacity-10 hover:text-gray-800 active:scale-97 transition duration-500"
+                          className="inline-block bg-transparent border-1 border-yellow-500 px-8 text-gray-500 rounded-md hover:bg-yellow-500 hover:bg-opacity-10 hover:text-gray-800 active:scale-97 transition duration-500"
                         >
                           {service.cta}
                         </Link>
@@ -146,43 +205,49 @@ const ServicesSection = () => {
           </div>
         </div>
 
-        <div className="lg:hidden relative overflow-hidden">
-          <div
-            className="flex transition-transform duration-1500 ease-in-out"
-            style={{
-              transform: `translateX(-${currentIndex * (isMobile ? 100 : 33.33)}%)`,
-            }}
-          >
-            {loopedServices.map((service, index) => (
-              <div
-                key={index}
-                className={`flex-shrink-0 px-2 ${isMobile ? 'w-full' : 'w-1/3'}`}
+     <div className="lg:hidden relative overflow-hidden">
+  <div
+    className="flex transition-transform duration-1500 ease-in-out"
+    style={{
+      transform: `translateX(-${currentIndex * (isMobile ? 100 : 33.33)}%)`,
+    }}
+  >
+    {loopedServices.map((service, index) => (
+      <div
+        key={index}
+        className={`flex-shrink-0 px-2 ${isMobile ? 'w-full' : 'w-1/3'}`}
+      >
+        <div className="bg-gray-900 bg-opacity-50 border-1 border-gray-700 p-1 rounded-lg shadow-lg h-full flex flex-col">
+          {/* Image for mobile view */}
+          <div className='h-40 w-full flex items-center justify-center rounded-lg shadow-lg overflow-hidden'>
+            <img 
+              src={service.image} 
+              alt={service.title}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          
+          <div className="p-1 flex-grow flex flex-col">
+            <h3 className="text-lg font-bold text-gray-500 mb-2 text-center">
+              {service.title}
+            </h3>
+            <p className="text-sm text-gray-300 mb-3 text-center">
+              {service.description}
+            </p>
+            <div className="mt-auto text-center">
+              <Link
+                to={service.path}
+                className="inline-block bg-transparent border-1 border-yellow-500 px-8 text-gray-500 rounded-md hover:bg-yellow-500 hover:bg-opacity-10 hover:text-gray-800 active:scale-97 transition duration-500"
               >
-                <div className="bg-[#e8e4d7] border-4 border-yellow-500 p-3 rounded-lg shadow-lg h-full flex flex-col">
-                  <div className="text-4xl text-center mb-1">
-                    {service.icon}
-                  </div>
-                  <div className="flex-grow flex flex-col justify-end">
-                    <h3 className="text-base font-semibold text-gray-800 mb-2 text-center">
-                      {service.title}
-                    </h3>
-                    <p className="text-sm text-gray-600 text-center mb-3">
-                      {service.description}
-                    </p>
-                    <div className="text-center">
-                      <Link
-                        to={service.path}
-                        className="inline-block px-6 py-1 bg-gradient-to-r from-yellow-500 to-gray-800 text-white rounded-md text-sm"
-                      >
-                        {service.cta}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
+                {service.cta}
+              </Link>
+            </div>
           </div>
         </div>
+      </div>
+    ))}
+  </div>
+</div>
 
         <div className="hidden lg:block">
           <button onClick={movePrev} className="absolute left-0 top-1/2 transform -translate-y-1/2 text-4xl text-white ml-5">
@@ -199,7 +264,7 @@ const ServicesSection = () => {
           {services.map((_, index) => (
             <button
               key={index}
-              className={`w-3 h-3 rounded-full transition-colors duration-300 ${index === currentIndex % services.length ? 'bg-white' : 'bg-gray-400'}`}
+              className={`w-3 h-3 cursor-pointer rounded-full transition-colors duration-300 ${index === currentIndex % services.length ? 'bg-white' : 'bg-gray-400'}`}
               onClick={() => setCurrentIndex(index)}
             ></button>
           ))}

@@ -45,7 +45,7 @@ const ServicesNav = () => {
   ];
 
   return (
-    <div className="bg-gray-900 text-white py-30 px-6">
+    <div className="b-900 text-white py-30 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.section
           initial="hidden"
@@ -62,7 +62,7 @@ const ServicesNav = () => {
             Crafting Digital Masterpieces: Where Innovation Fueled by Impact
           </motion.p>
 
-          <motion.h3 variants={fadeIn} className="max-w-3xl px-4 bg-gray-900 bg-opacity-70 py-0.4 rounded-xl border-l-1 border-r-1 border-yellow-500 mb-8 justify-self-center hover:px-6 transition-all">
+          <motion.h3 variants={fadeIn} className="max-w-3xl px-6 bg-[#e8e4d8] bg-opacity-70 py-0.4 rounded-xl border-l-1 border-r-1 border-yellow-500 mb-8 justify-self-center hover:px-6 transition-all">
             <div className="text-center text-2xl md:text-3xl text-yellow-500 font-semibold mb-8">Transform Your Vision into a Future-Ready Reality</div>
 
           </motion.h3>
@@ -123,24 +123,24 @@ const ServicesNav = () => {
           </motion.h2>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <motion.div variants={fadeIn} className="bg-gray-800 bg-opacity-50 p-6 rounded-xl hover:transform transition-transform hover:scale-101 border-blue-500 hover:border-l-2 hover:border-r-2">
-              <h3 className="text-xl font-bold mb-3 text-yellow-500 hover:text-blue-500">Tech Meets Artistry</h3>
-              <p className="text-gray-300">We don't just code—we create. Every project is a blend of innovation, aesthetics and strategy.</p>
+            <motion.div variants={fadeIn} className="bg-gray-100 bg-opacity-50 p-6 rounded-xl hover:transform transition-transform hover:scale-101 border-yellow-500 hover:border-l-2 hover:border-r-2">
+              <h3 className="text-xl font-bold mb-3 text-yellow-500 hover:text-yellow-500">Tech Meets Artistry</h3>
+              <p className="text-gray-700">We don't just code—we create. Every project is a blend of innovation, aesthetics and strategy.</p>
             </motion.div>
 
-            <motion.div variants={fadeIn} className="bg-gray-800 bg-opacity-50 p-6 rounded-xl hover:transform transition-transform hover:scale-101 border-blue-500 hover:border-l-2 hover:border-r-2">
-              <h3 className="text-xl font-bold mb-3 text-yellow-500 hover:text-blue-500">Tailored Solutions</h3>
-              <p className="text-gray-300">No templates, no shortcuts. Your brand deserves a custom-built digital ecosystem.</p>
+            <motion.div variants={fadeIn} className="bg-gray-100 bg-opacity-50 p-6 rounded-xl hover:transform transition-transform hover:scale-101 border-yellow-500 hover:border-l-2 hover:border-r-2">
+              <h3 className="text-xl font-bold mb-3 text-yellow-500 hover:text-yellow-500">Tailored Solutions</h3>
+              <p className="text-gray-700">No templates, no shortcuts. Your brand deserves a custom-built digital ecosystem.</p>
             </motion.div>
 
-            <motion.div variants={fadeIn} className="bg-gray-800 bg-opacity-50 p-6 rounded-xl hover:transform transition-transform hover:scale-101 border-blue-500 hover:border-l-2 hover:border-r-2">
-              <h3 className="text-xl font-bold mb-3 text-yellow-500 hover:text-blue-500">Results-Driven</h3>
-              <p className="text-gray-300">From boosting sales to skyrocketing engagement, we measure success by your growth.</p>
+            <motion.div variants={fadeIn} className="bg-gray-100 bg-opacity-50 p-6 rounded-xl hover:transform transition-transform hover:scale-101 border-yellow-500 hover:border-l-2 hover:border-r-2">
+              <h3 className="text-xl font-bold mb-3 text-yellow-500 hover:text-yellow-500">Results-Driven</h3>
+              <p className="text-gray-700">From boosting sales to skyrocketing engagement, we measure success by your growth.</p>
             </motion.div>
           </div>
 
-          <motion.div variants={fadeIn} className="bg-gray-800 bg-opacity-70 p-8 rounded-xl border-l-4 border-yellow-500">
-            <p className="text-xl italic text-center">
+          <motion.div variants={fadeIn} className="bg-gray-100 bg-opacity-70 p-8 rounded-xl border-l-4 border-yellow-500">
+            <p className="text-xl italic text-center text-yellow-500 font-bold">
               "Marketist: Where every line of code is a stroke of genius, and every strategy is a masterpiece in the making."
             </p>
           </motion.div>

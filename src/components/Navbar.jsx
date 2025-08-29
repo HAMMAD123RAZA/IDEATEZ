@@ -130,12 +130,12 @@ const Navbar = () => {
           path: '/Get_A_Quote',
           state: { formTitle: 'Technical Support' }
         },
-        { 
-          id: 'careers', 
-          icon: '👩🏻‍💻', 
-          label: 'Careers',
-          path: '/careers' 
-        },
+        // { 
+        //   id: 'careers', 
+        //   icon: '👩🏻‍💻', 
+        //   label: 'Careers',
+        //   path: '/careers' 
+        // },
       ],
     }
   ];
@@ -337,9 +337,9 @@ const Navbar = () => {
               whileHover={!isMobileView() ? "hover" : undefined}
             >
               <img 
-                src="/da-log.png" 
+                src="/IdLogo1.jpg" 
                 alt="Logo" 
-                className={`${isMobileView() ? 'h-12' : 'h-16'} w-auto`} 
+                className={`${isMobileView() ? 'h-12' : 'h-16'} w-auto rounded-full`} 
               />
             </motion.div>
           </Link>

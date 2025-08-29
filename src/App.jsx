@@ -59,17 +59,19 @@ const AdminLayout = () => {
 
 // PrivateRoute to protect admin pages
 const PrivateRoute = () => {
-  const { currentUser, loading } = useAuth();
+  // const { currentUser, loading } = useAuth();
 
-  if (loading) {
-    return (
-      <div className="flex h-screen w-full items-center justify-center bg-gray-900 text-white">
-        Loading...
-      </div>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <div className="flex h-screen w-full items-center justify-center bg-gray-900 text-white">
+  //       Loading...
+  //     </div>
+  //   );
+  // }
 
-  return currentUser ? <AdminLayout /> : <Navigate to="/admin/login" replace />;
+  // return currentUser ? <AdminLayout /> : <Navigate to="/admin/login" replace />;
+    return <AdminLayout /> 
+
 };
 
 const DASHBOARD_PERMISSIONS = [
