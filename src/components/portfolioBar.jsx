@@ -38,12 +38,14 @@ const PortfolioBar = () => {
   // Define Categories
   const categories = [
     'All',
-    'UI/UX Design',
-    'Web Development',
-    'Marketing Campaigns',
-    'Case Studies',
-    '3D Models',
-    'Product Design'
+            '3D Models',
+                    'Product Design',
+    'kite Design',
+    'Cube',
+    'Rock',
+    'Square',
+    // '3D Models',
+    // 'Product Design'
   ];
 
   // Define Projects (IDs 1–21)
@@ -52,7 +54,7 @@ const PortfolioBar = () => {
     // UI/UX Design
     {
       id: 1,
-      category: 'UI/UX Design',
+      category: 'kite Design',
       title: 'Interactive Mobile App Preview',
       description: 'Fully interactive 3D preview of a mobile app interface.',
       type: 'interactiveWireframe',
@@ -78,7 +80,7 @@ const PortfolioBar = () => {
     // Web Development
     {
       id: 4,
-      category: 'Web Development',
+      category: 'Cube',
       title: 'Custom CMS Interface',
       description: 'Interactive 3D view of a headless CMS interface.',
       type: 'dataVisualizationTool',
@@ -86,7 +88,7 @@ const PortfolioBar = () => {
     },
     {
       id: 5,
-      category: 'Web Development',
+      category: 'Cube',
       title: 'E-commerce Product Configurator',
       description: '3D product configurator built with real-time state updates.',
       type: 'productConfigurator',
@@ -96,7 +98,7 @@ const PortfolioBar = () => {
     // Marketing Campaigns
     {
       id: 7,
-      category: 'Marketing Campaigns',
+      category: 'Rock',
       title: 'AR Social Media Filter Demo',
       description: '3D augmented reality filter prototype for social platforms.',
       type: 'augmentedRealityPreview',
@@ -104,7 +106,7 @@ const PortfolioBar = () => {
     },
     {
       id: 8,
-      category: 'Marketing Campaigns',
+      category: 'Rock',
       title: 'Brand Identity Visualizer',
       description: 'Interactive 3D brand style guide with color and logo variations.',
       type: 'brandIdentityVisualizer',
@@ -112,7 +114,7 @@ const PortfolioBar = () => {
     },
     {
       id: 9,
-      category: 'Marketing Campaigns',
+      category: 'Rock',
       title: 'Interactive Infographic Experience',
       description: 'Animated data infographic rendered in 3D for campaign visuals.',
       type: 'interactiveInfographic',
@@ -122,7 +124,7 @@ const PortfolioBar = () => {
     // Case Studies
     {
       id: 10,
-      category: 'Case Studies',
+      category: 'Square',
       title: 'Enterprise E-commerce Redesign',
       description: 'Redesigned enterprise-level online store with improved UX flow.',
       type: 'ecommercePlatform',
