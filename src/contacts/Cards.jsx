@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const ImageCard = ({ icon, title, content, delay }) => {
   return (
     <motion.div 
-      className="relative w-full md:w-64 lg:w-64 h-32 rounded-lg overflow-hidden shadow-lg m-4 border border-cyan-500/20"
+className="relative w-full max-w-xs sm:w-64 md:w-64 lg:w-64 h-32 rounded-lg overflow-hidden shadow-lg my-3 mx-auto sm:m-4 border border-cyan-500/20"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 5 }}
       whileHover={{ scale: 1.05 ,y:20}}
@@ -29,7 +29,7 @@ const ImageCard = ({ icon, title, content, delay }) => {
         animate={{ opacity: 1 }}
         transition={{ delay: delay + 0.2 }}
       >
-        <h3 className="text-gray-900 text-lg font-bold">{title}</h3>
+<h3 className="text-gray-900 text-base sm:text-lg font-bold">{title}</h3>
       </motion.div>
       
       {/* Content */}
@@ -39,7 +39,7 @@ const ImageCard = ({ icon, title, content, delay }) => {
         animate={{ opacity: 1 }}
         transition={{ delay: delay + 0.4 }}
       >
-        <p className="text-gray-900 text-base">{content}</p>
+<p className="text-gray-900 text-sm sm:text-base">{content}</p>
       </motion.div>
     </motion.div>
   );
@@ -52,7 +52,7 @@ const ContactCards = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>,
       title: "Phone Number",
-      content: "+92153743868 || 03153743868"
+      content: "+92 3153743868"
     },
     {
       icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -81,7 +81,7 @@ const ContactCards = () => {
   return (
     <div className="h-full text-gray-900  px-4 sm:px-6 lg:px-8">
       <motion.div 
-        className="max-w-7xl mx-auto"
+className="max-w-7xl mx-auto px-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -96,7 +96,7 @@ const ContactCards = () => {
         
         </motion.div>
         
-        <div className="flex  flex-wrap justify-center">
+<div className="flex flex-wrap justify-center gap-4 sm:gap-0">
           {cards.map((card, index) => (
             <ImageCard 
               key={index}
