@@ -1,53 +1,59 @@
 name: Integration
 
-On:
+on:
   push:
     branches: ["main"]
   pull_request:
     branches: ["main"]
 
 jobs:
-# job 1
+  # ---------------------------
+  # Job 1: Build
+  # ---------------------------
   build:
-
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: ["14.x", "16.x", "18.x"]
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
+
       - name: Install dependencies
-      - run : npm i 
+        run: npm install
 
-      - name: Running Build
-      - run : npm run build
+      - name: Run build
+        run: npm run build
 
-      # job 2
-
-    unit-testing:
-
+  # ---------------------------
+  # Job 2: Unit Testing
+  # ---------------------------
+  unit-testing:
     runs-on: ubuntu-latest
+    needs: build
     strategy:
       matrix:
         node-version: ["14.x", "16.x", "18.x"]
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
+
       - name: Install dependencies
-      - run : npm i 
+        run: npm install
 
-      - name: Testing Cases
-      - run : npm run test
-
-     
+      - name: Run test cases
+        run: npm run test
