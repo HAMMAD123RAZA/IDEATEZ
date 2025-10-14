@@ -11,6 +11,7 @@ const DigitalAgency = () => {
   };
 
   return (
+    <div className="font-sans text-yellow-500 min-h-screen">
       <motion.section
         initial="hidden"
         animate="visible"
