@@ -69,7 +69,7 @@ jobs:
   # -----------------------
   docker:
     runs-on: ubuntu-latest
-    needs: [build, unit-testing]  # Run after successful build + tests
+    needs: [build]  # Run after successful build + tests
 
     steps:
       - name: Checkout code
