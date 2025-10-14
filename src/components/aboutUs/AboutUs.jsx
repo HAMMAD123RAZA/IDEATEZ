@@ -1,7 +1,7 @@
-// client/src/components/aboutUs/AboutUs.jsx
 
 import { motion } from "framer-motion";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+// import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const DigitalAgency = () => {
   const navigate = useNavigate()
