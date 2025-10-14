@@ -1,7 +1,7 @@
+// client/src/components/aboutUs/AboutUs.jsx
 
 import { motion } from "framer-motion";
-// import { Link, useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const DigitalAgency = () => {
   const navigate = useNavigate()
@@ -11,7 +11,6 @@ const DigitalAgency = () => {
   };
 
   return (
-    <div className="font-sans text-yellow-500 min-h-screen">
       <motion.section
         initial="hidden"
         animate="visible"
