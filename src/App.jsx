@@ -1,5 +1,4 @@
 
-// FILE: client/src/App.jsx
 
 import React from 'react'
 import { Routes, Route, BrowserRouter as Router, Outlet, Navigate } from 'react-router-dom' 
