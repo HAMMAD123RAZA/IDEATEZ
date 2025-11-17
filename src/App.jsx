@@ -2,11 +2,9 @@
 
 import React from 'react'
 import { Routes, Route, BrowserRouter as Router, Outlet, Navigate } from 'react-router-dom' 
-// Layouts
 import AdminWrapper from './admin/AdminWrapper'
 import { AuthProvider, useAuth } from './admin/AuthContext'; 
 
-// Components
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './components/Home'
@@ -46,7 +44,6 @@ const DefaultLayout = ({ children }) => (
   </>
 )
 
-// AdminLayout component to wrap admin routes
 const AdminLayout = () => {
   return (
     <AdminWrapper>
@@ -55,7 +52,6 @@ const AdminLayout = () => {
   );
 };
 
-// PrivateRoute to protect admin pages
 const PrivateRoute = () => {
   // const { currentUser, loading } = useAuth();
 

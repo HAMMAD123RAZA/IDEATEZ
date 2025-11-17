@@ -1,4 +1,3 @@
-// FILE: client/src/utils/dateUtils.js
 export const formatDateToLocal = (date) => {
   if (!(date instanceof Date)) return '';
   return new Intl.DateTimeFormat('en-GB', {
