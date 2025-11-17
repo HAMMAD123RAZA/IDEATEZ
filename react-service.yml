@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: react-app-service             # The name of the Service
+spec:
+  selector:
+    app: react-app                    # Connects to Pods with this label (matches Deployment)
+  ports:
+    - protocol: TCP                   # React app (via Nginx) uses HTTP = TCP
+      port: 80                        # The port exposed inside the cluster (like a virtual IP)
+      targetPort: 80                  # Port inside each Pod (containerPort from Deployment)
+  type: NodePort                  # Exposes the service externally (on cloud)
+
+# Deployment react-deploy.yml=>	Runs & manages your Pods (containers).
+# Service react-service.yml=>	Gives your app a stable IP & DNS name. Handles load balancing.
+# type: LoadBalancer / NodePort	Lets you access the app from outside Kubernetes.
+

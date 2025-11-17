@@ -1,0 +1,29 @@
+# This defines a Kubernetes Deployment — manages ReplicaSets and ensures your app runs reliably
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-app-deployment          # Name of the Deployment object
+  labels:
+    app: react-app                    # Label to identify this app (used by Service selector)
+spec:
+  replicas: 1                        # Number of container replicas (pods) to run
+  selector:
+    matchLabels:
+      app: react-app                  # Must match the labels in the Pod template below
+  template:
+    metadata:
+      labels:
+        app: react-app                # Pod label (must match selector)
+    spec:
+      containers:
+        - name: react-app             # Container name
+          image: hammad123raza/react-client:latest   
+          ports:
+            - containerPort: 80       # Expose port 80 inside the pod (Nginx default)
+          resources:                  # Optional resource limits for Kubernetes scheduling
+            requests:
+              cpu: "100m"             # Request 0.1 CPU (minimum guaranteed)
+              memory: "128Mi"         # Request 128MB memory
+            limits:
+              cpu: "500m"             # Max 0.5 CPU
+              memory: "512Mi"         # Max 512MB memory

@@ -2,11 +2,10 @@
 // FILE: client/src/App.jsx
 
 import React from 'react'
-import { Routes, Route, BrowserRouter as Router, Outlet, Navigate } from 'react-router-dom' // Import Outlet, Navigate
-
+import { Routes, Route, BrowserRouter as Router, Outlet, Navigate } from 'react-router-dom' 
 // Layouts
 import AdminWrapper from './admin/AdminWrapper'
-import { AuthProvider, useAuth } from './admin/AuthContext'; // Import AuthProvider and useAuth
+import { AuthProvider, useAuth } from './admin/AuthContext'; 
 
 // Components
 import Navbar from './components/Navbar'
