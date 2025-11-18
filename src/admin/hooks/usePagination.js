@@ -1,7 +1,4 @@
 
-// For Pagination support
-
-// FILE: client/src/admin/hooks/usePagination.js
 import { useState, useMemo } from 'react';
 
 export const usePagination = (data, initialRowsPerPage = 10) => { // Default to 10

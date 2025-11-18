@@ -11,6 +11,7 @@ export const formatDateToLocal = (date) => {
 };
 
 export const getTimeAgo = (date) => {
+  if (!(date instanceof Date)) return '';
 
   const now = new Date();
   const seconds = Math.round((now - date) / 1000);

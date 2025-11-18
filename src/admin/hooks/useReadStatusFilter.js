@@ -1,5 +1,3 @@
-// For Read/unread toggle
-// FILE: client/src/admin/hooks/useReadStatusFilter.js
 import { useMemo } from 'react';
 
 export const useReadStatusFilter = (data, showUnreadOnly, showReadOnly) => {
